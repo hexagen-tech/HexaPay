@@ -21,8 +21,8 @@ app.post('/pay', (req, res) => {
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "http://localhost:3000/success",
-        "cancel_url": "http://localhost:3000/cancel"
+        "return_url": "https://hexapay.herokuapp.com/success",
+        "cancel_url": "https://hexapay.herokuapp.com/cancel"
     },
     "transactions": [{
         "item_list": {
@@ -83,4 +83,4 @@ app.get('/success', (req, res) => {
 
 app.get('/cancel', (req, res) => res.send('Cancelled'));
 
-app.listen(3000, () => console.log('Server Started'));
+app.listen(3000);
