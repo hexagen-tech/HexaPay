@@ -21,8 +21,8 @@ app.post('/pay', (req, res) => {
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "https://hexapay.herokuapp.com/success",
-        "cancel_url": "https://hexapay.herokuapp.com/cancel"
+        "return_url": "https://hexpay.herokuapp.com/success",
+        "cancel_url": "https://hexpay.herokuapp.com/cancel"
     },
     "transactions": [{
         "item_list": {
